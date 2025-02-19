@@ -1,3 +1,0 @@
-interface du questionnaire avancée 
-création de fonction qui va chercher les attributs d'une personnes qui est comparée à toute les personnes de la liste pour déterminer un pourcentagte de proximité
-avancement du transfert des données du projet entre les différentes pages

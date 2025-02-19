@@ -1,9 +1,14 @@
-from data import *
+
 from  random import *
 from math import *
 import json
-dico_compatibilite = {}
+from interface.interface_quest_actual_version import *
 
+data = load_data()
+
+dico = data['dico']
+coef = data['coef']
+dico_compatibilite = {}
 
 def compare_proximity (people, person):
     numerateur = 0
@@ -99,7 +104,10 @@ def representation_person_on_plan (person):
 
 representation_person_on_plan("person_2")
 
-
+print(dico_compatibilite)
+print(distance_with_people("person_2"))
+print(sort_compatibility_between_users("person_2"))
+print(dico_distance("person_2"))
 
 # coefficiant pr chaque parametre
 # l'eleve choisi combien compte chaque coefficiant

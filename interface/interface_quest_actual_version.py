@@ -43,8 +43,8 @@ def button_clicked():
         button.clicked = True
     return button.clicked
     
-def save_info (pers):
-    pers = {
+def save_info ():
+    return {
         "presentation" : {
             "prenom": request.form.get('prenom'),
             "nom": request.form.get('nom')
@@ -56,7 +56,7 @@ def save_info (pers):
             "couleur" : request.form.get('couleur')
         }
     }
-    return pers
+    
 
 def load_data():
     try:
@@ -70,12 +70,17 @@ def save_data(data):
         json.dump(data, file, indent=4)
 
 def save_info_in_dico():
-    key = request.form.get('nom')
     data = save_info()
     data_dict = load_data()
-    data_dict[key] = data
+    
+    if "dico" not in data_dict:
+        data_dict["dico"] = []
+    
+    person_id = request.form.get("nom")
+    data_dict["dico"].append({
+            person_id: data
+        })
     save_data(data_dict)
-
 
 
 if __name__ == '__main__':
