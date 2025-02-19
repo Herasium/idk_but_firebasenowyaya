@@ -55,12 +55,12 @@ def save_info (pers):
     }
     return pers
 
-def save_info_in_dico ():
-    key = request.form.get('nom')
-    data = save_info (key)
-    to_write = None
-    ref = db.reference("/"+key)
-    ref.set(data)
+#def save_info_in_dico ():
+    #key = request.form.get('nom')
+    #data = save_info (key)
+    #to_write = None
+    #ref = db.reference("/"+key)
+    #ref.set(data)
 
 
 if __name__ == '__main__':
