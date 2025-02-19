@@ -1,16 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import json
-from firebase_admin import db
-import firebase_admin
-from firebase_admin import credentials
 
 
-db_url = "https://proximite-61e76-default-rtdb.firebaseio.com/"
-
-cred = credentials.Certificate("firebase.json")
-default_app = firebase_admin.initialize_app(cred, {
-    'databaseURL':db_url
-})
 
 site = Flask(__name__)
 site.secret_key = "secret_key_for_flashing"

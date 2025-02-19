@@ -2,56 +2,8 @@ from data import *
 from  random import *
 from math import *
 import json
-import firebase_admin
-from firebase_admin import credentials, db
 dico_compatibilite = {}
 
-cred = credentials.Certificate("firebase.json")
-firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://proxy-dc7f1-default-rtdb.firebaseio.com/'
-})
-
-def get_data_from_firebase():
-    ref = db.reference('/')
-    return ref.get()
-
-
-# récupérer les données de la base de données
-
-def get_nom(nom):
-    ref = db.reference("/" + nom + "/presentation/nom")
-    nom = ref.get()
-    return nom
-
-def get_prenom(nom):
-    ref = db.reference("/" + nom + "/presentation/prenom")
-    prenom = ref.get()
-    return prenom
-
-def get_info_perso(nom):    
-    ref = db.reference('/'+ nom + "/info_perso")
-    info_perso = ref.get()
-    return info_perso
-
-def get_age(nom):
-    ref = db.reference("/" + nom + "/info_perso/age")
-    age = ref.get()
-    return age
-
-def get_taille(nom):
-    ref = db.reference("/" + nom + "/info_perso/taille")
-    taille = ref.get()
-    return taille
-
-def get_interet(nom):
-    ref = db.reference("/" + nom + "/info_perso/interet")
-    interet = ref.get()
-    return interet
-
-def get_couleur(nom):    
-    ref = db.reference("/" + nom + "/info_perso/couleur")
-    couleur = ref.get()
-    return couleur
 
 def compare_proximity (people, person):
     numerateur = 0
