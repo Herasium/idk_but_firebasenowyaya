@@ -1,0 +1,38 @@
+{
+    "Fraboulet": {
+        "presentation": {
+            "prenom": "Marine",
+            "nom": "Fraboulet"
+        },
+        "info_perso": {
+            "age": "17 ans",
+            "taille": "150/160 cm",
+            "interet": "manger",
+            "couleur": "Bleu"
+        }
+    },
+    "null": {
+        "presentation": {
+            "prenom": null,
+            "nom": null
+        },
+        "info_perso": {
+            "age": null,
+            "taille": null,
+            "interet": null,
+            "couleur": null
+        }
+    },
+    "null": {
+        "presentation": {
+            "prenom": null,
+            "nom": null
+        },
+        "info_perso": {
+            "age": null,
+            "taille": null,
+            "interet": null,
+            "couleur": null
+        }
+    }
+}

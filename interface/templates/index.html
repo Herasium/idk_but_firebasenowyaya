@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchMates</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleprincipalv3.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/flavicon1.png') }}">
+
+
+</head>
+
+<body>
+    <form id="form-interet" method="POST" action="/submit">
+        <div id="main" class="principal">
+            <center>
+                <h1>
+                    Trouvez votre mate
+                </h1>
+            </center>
+            <div class="flash_message">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                
+                        {% for category, message in messages %}
+                            <class="{{ category }}>{{ message }}</class>
+                        {% endfor %}
+                
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <p class="entry">Entrez votre prénom :</p>
+            <input type="text" class="input-entry" name="prenom" placeholder="Votre prénom ici">
+            <br>
+            <p class="entry">Entrez votre nom :</p>
+            <input type="text" class="input-entry" name="nom" placeholder="Votre nom ici">
+            
+            <br>
+            <p class="entry">Entrez votre âge :</p>
+            <select class="input-menu" name="age">
+                <!-- <option value=""></option> -->
+                <option value="14 ans">14 ans</option>
+                <option value="15 ans">15 ans</option>
+                <option value="16 ans">16 ans</option>
+                <option value="17 ans">17 ans</option>
+                <option value="18 ans">18 ans</option>
+                <option value="42 ans">42 ans</option>
+            </select>
+
+            <br>
+            <p class="entry">Entrez votre taille :</p>
+            <select class="input-menu" name="taille">
+                <!-- <option value=""></option> -->
+                <option value="150/160 cm">150/160 cm</option>
+                <option value="160/170 cm">160/170 cm</option>
+                <option value="170/180 cm">170/180 cm</option>
+                <option value="180/190 cm">180/190 cm</option>
+                <option value="190/200 cm">190/200 cm</option>
+            </select>
+            <br>
+            <p class="entry">Entrez votre intéret :</p>
+            <select class="input-menu" name="interet">
+                <!-- <option value=""></option> -->
+                <option value="manger">manger</option>
+                <option value="dormir">dormir</option>
+                <option value="jouer">jouer</option>
+                <option value="programmer">programmer</option>
+                <option value="faire du sport">faire du sport</option>
+            </select>
+            <br>
+            <p class="entry">Entrez votre couleur préférée :</p>
+            <select class="input-menu" name="couleur">
+                <!-- <option value=""></option> -->
+                <option value="Bleu">Bleu</option>
+                <option value="Rouge">Rouge</option>
+                <option value="Jaune">Jaune</option>
+                <option value="Vert">Vert</option>
+                <option value="Orange">Orange</option>
+                <option value="Rose">Rose</option>
+                <option value="Violet">Violet</option>
+
+            </select>
+            <br>
+            <button type="submit" class="bouton">Envoyer</button>
+    
+
+        </div>
+    </form>
+
+</body>
+
+</html>
