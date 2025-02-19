@@ -11,7 +11,7 @@
             "couleur": "Bleu"
         }
     },
-    "null": {
+    "null_1": {
         "presentation": {
             "prenom": null,
             "nom": null
@@ -23,7 +23,7 @@
             "couleur": null
         }
     },
-    "null": {
+    "null_2": {
         "presentation": {
             "prenom": null,
             "nom": null
@@ -34,5 +34,51 @@
             "interet": null,
             "couleur": null
         }
+    },
+    "person_1": {
+        "presentation": {
+            "prenom": "Eudocie",
+            "nom": "de Khovrine"
+        },
+        "info_perso": {
+            "genre": "fille",
+            "interet": "manger",
+            "age": "16 ans",
+            "taille": "110/130 cm",
+            "couleur préférée": "violet"
+        }
+    },
+    "person_2": {
+        "presentation": {
+            "prenom": "Marine",
+            "nom": "Fraboulet"
+        },
+        "info_perso": {
+            "genre": "fille",
+            "interet": "dormir",
+            "age": "16 ans",
+            "taille": "110/130 cm",
+            "couleur préférée": "rouge"
+        }
+    },
+    "person_3": {
+        "presentation": {
+            "prenom": "Louise",
+            "nom": "Christophe"
+        },
+        "info_perso": {
+            "genre": "fille",
+            "interet": "dormir",
+            "age": "16 ans",
+            "taille": "160/180 cm",
+            "couleur préférée": "bleu"
+        }
+    },
+    "coef": {
+        "genre": 1,
+        "interet": 3,
+        "age": 3,
+        "taille": 5,
+        "couleur préférée": 9
     }
 }

@@ -6,6 +6,9 @@ import json
 site = Flask(__name__)
 site.secret_key = "secret_key_for_flashing"
 
+
+FILE_PATH = 'data.json'
+
 @site.route("/")
 def bonjour() : 
     return render_template("index.html")
@@ -55,12 +58,24 @@ def save_info (pers):
     }
     return pers
 
-#def save_info_in_dico ():
-    #key = request.form.get('nom')
-    #data = save_info (key)
-    #to_write = None
-    #ref = db.reference("/"+key)
-    #ref.set(data)
+def load_data():
+    try:
+        with open(FILE_PATH, 'r') as file:
+            return json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+def save_data(data):
+    with open(FILE_PATH, 'w') as file:
+        json.dump(data, file, indent=4)
+
+def save_info_in_dico():
+    key = request.form.get('nom')
+    data = save_info()
+    data_dict = load_data()
+    data_dict[key] = data
+    save_data(data_dict)
+
 
 
 if __name__ == '__main__':
