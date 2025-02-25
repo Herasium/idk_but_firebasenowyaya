@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 import json
 
 
-
 site = Flask(__name__)
 site.secret_key = "secret_key_for_flashing"
  
