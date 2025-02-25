@@ -226,16 +226,18 @@ h1 {
     text-align: center;
     margin: 20px 0;
 }
-/* UL */
- ul{
-  list-style-type: none;
-    margin: 0;
+/* LISTE */
+ul {
+    list-style-type: none; 
     padding: 0;
-    margin-right: 0;
-
 }
 
-/* LI */
-/* li{
-  background-image: url('trop.gif');
-} */
+ul li span {
+    color: #000;  
+    font-size: 20px;  
+    margin-left: 5px;  
+}
+
+ul li img, ul li span {
+    margin-right: 7.5px;  
+}

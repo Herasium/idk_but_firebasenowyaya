@@ -5,10 +5,13 @@ from tools_json import load_data
 data = load_data()
 coef = data.get("coef", {})
 
-dico = {list(person.keys())[0].strip().lower(): list(person.values())[0] for person in data.get("dico", [])}
+def get_dico():
+    data = load_data()
+    return {list(person.keys())[0].strip().lower(): list(person.values())[0] for person in data.get("dico", [])}
 
 
 def compare_proximity(people, person):
+    dico = get_dico()
     numerateur = 0
     denominateur = 0
 
@@ -21,6 +24,7 @@ def compare_proximity(people, person):
     return round((numerateur / denominateur) * 100, 1)
 
 def compare_with_different_person(person):
+    dico = get_dico()
     person = person.strip().lower()
     dico_compatibilite = {}
     for people in dico.keys():

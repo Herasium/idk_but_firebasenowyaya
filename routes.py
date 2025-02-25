@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import json
 from tools_json import load_data, save_data
-from compare_proximity import compare_with_different_person
+from compare_proximity import compare_with_different_person, sort_compatibility_between_users, get_dico
+
 
 site = Flask(__name__)
 site.secret_key = "secret_key_for_flashing"
@@ -22,7 +23,6 @@ def submit_and_verify():
     taille = request.form.get("taille")
     interet = request.form.get("interet")
     couleur = request.form.get("couleur")
-    personne = "person_2"
 
     
 
@@ -31,8 +31,18 @@ def submit_and_verify():
         return redirect(url_for("bonjour"))
     else :
         save_info_in_dico()
+        current_person = nom.strip().lower()
         compatibilite = compare_with_different_person(nom)
-        return render_template("submitv2.html", compatibilite=compatibilite) 
+        sort_number, sort_people = sort_compatibility_between_users(current_person)
+        dico = get_dico()
+
+        sort_people_display = [
+        f"{dico[person]['presentation']['prenom']} {dico[person]['presentation']['nom']}"
+        if person in dico else person 
+        for person in sort_people
+        ]
+
+        return render_template("submitv2.html", sort_number=sort_number, sort_people=sort_people_display, compatibilite=compatibilite) 
   
 
 def button_clicked():
