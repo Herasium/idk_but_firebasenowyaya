@@ -5,7 +5,7 @@ import json
 
 site = Flask(__name__)
 site.secret_key = "secret_key_for_flashing"
-
+ 
 
 FILE_PATH = 'data.json'
 
