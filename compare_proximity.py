@@ -83,17 +83,20 @@ def dico_distance(person):
 def representation_person_on_plan(person):
     positions = []
     dico_distance_personne = dico_distance(person)
+    angleinter = 360 / len(dico_distance_personne)
+    angle = 0
 
     for people, distance in dico_distance_personne.items():
-        angle = randint(0, 360) 
-        coordonnee_x = cos(radians(angle)) * distance
-        coordonnee_y = sin(radians(angle)) * distance
+        coordonnee_x = cos(radians(angle)) * (50 + 150 *distance/100)
+        coordonnee_y = sin(radians(angle)) * (50 + 150 *distance/100)
         
         positions.append({
             'name': people,
             'x': coordonnee_x,
             'y': coordonnee_y
         })
+        angle = angle + angleinter
+
     print(positions)
     return positions
 
