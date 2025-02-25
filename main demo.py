@@ -6,22 +6,26 @@ from interface.interface_quest_actual_version import *
 
 data = load_data()
 
-dico = data['dico']
+
 coef = data['coef']
 dico_compatibilite = {}
+
+dico = {list(person.keys())[0]: list(person.values())[0] for person in data["dico"]}
+
+
 
 def compare_proximity (people, person):
     numerateur = 0
     denominateur = 0
-    if dico [people]["info_perso"] == dico[person]["info_perso"]:
+    if dico[people]["info_perso"] == dico[person]["info_perso"]:
         pass
-    else:
-        for caracter in dico[people]["info_perso"].keys ():
-            if dico [person]['info_perso'][caracter] == dico [people]['info_perso'][caracter]:
-                numerateur = numerateur + coef[caracter]
-            denominateur = denominateur + coef[caracter]
-        moyenne = round ((numerateur/denominateur)*100,1)
-    return moyenne
+    for caracter in dico[people]["info_perso"].keys():
+        if dico[person]["info_perso"].get(caracter) == dico[people]["info_perso"].get(caracter):
+            numerateur += coef.get(caracter, 0)  
+        denominateur += coef.get(caracter, 0)  
+    if denominateur == 0:
+        return 0.0  
+    return round((numerateur / denominateur) * 100, 1)
 
 
 
@@ -101,6 +105,8 @@ def representation_person_on_plan (person):
         angle = randint(0,90)
         quadrant = randint (1,4)
         coordonnee_x = (cos (angle))*(hypothenuse)
+        coordonnee_y = sin(angle) * hypothenuse
+        
 
 representation_person_on_plan("person_2")
 

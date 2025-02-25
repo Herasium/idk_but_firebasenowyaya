@@ -51,6 +51,20 @@
                     "couleur pr\u00e9f\u00e9r\u00e9e": "bleu"
                 }
             }
+        },
+        {
+            "test3": {
+                "presentation": {
+                    "prenom": "eudo",
+                    "nom": "test3"
+                },
+                "info_perso": {
+                    "age": "14 ans",
+                    "taille": "150/160 cm",
+                    "interet": "manger",
+                    "couleur": "Bleu"
+                }
+            }
         }
     ]
 }
