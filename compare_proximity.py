@@ -21,7 +21,8 @@ def compare_proximity(people, person):
         denominateur += coef.get(caracter, 0)
     if denominateur == 0:
         return 0.0
-    return round((numerateur / denominateur) * 100, 1)
+    compatibilite = (numerateur / denominateur) * 100
+    return round(min(100, compatibilite), 1)
 
 def compare_with_different_person(person):
     dico = get_dico()
@@ -78,22 +79,28 @@ def dico_distance(person):
         dico_distance_person[sort_people[i]] = sort_distance[i]
     return dico_distance_person
 
+
 def representation_person_on_plan(person):
+    positions = []
     dico_distance_personne = dico_distance(person)
-    for people in dico_distance_personne.keys():
-        hypothenuse = dico_distance_personne[people]
-        angle = randint(0, 90)
-        quadrant = randint(1, 4)
-        coordonnee_x = cos(radians(angle)) * hypothenuse
-        coordonnee_y = sin(radians(angle)) * hypothenuse
+
+    for people, distance in dico_distance_personne.items():
+        angle = randint(0, 360) 
+        coordonnee_x = cos(radians(angle)) * distance
+        coordonnee_y = sin(radians(angle)) * distance
         
-        print(f"{people}: x={coordonnee_x}, y={coordonnee_y}")
+        positions.append({
+            'name': people,
+            'x': coordonnee_x,
+            'y': coordonnee_y
+        })
+    print(positions)
+    return positions
 
 
-representation_person_on_plan("person_2")
 
 
-print("Compatibilité brute :", compare_with_different_person("person_2"))
-print("Distances et personnes :", distance_with_people("person_2"))
-print("Tri des compatibilités :", sort_compatibility_between_users("person_2"))
-print("Dictionnaire des distances :", dico_distance("person_2"))
+# print("Compatibilité brute :", compare_with_different_person("person_2"))
+# print("Distances et personnes :", distance_with_people("person_2"))
+# print("Tri des compatibilités :", sort_compatibility_between_users("person_2"))
+# print("Dictionnaire des distances :", dico_distance("person_2"))

@@ -82,6 +82,20 @@ h1 {
     min-height: 500px;
 }
 /* CARTE */
+.personne {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 12px;
+    transform: translate(-50%, -50%); 
+    z-index: 4;
+
+}
 
 .circle {
     position: absolute;
@@ -126,6 +140,8 @@ h1 {
     transform: translate(-50%, -50%);
     z-index: 2;
 }
+
+
 /* animation */
 .ripple {
     position: absolute;
@@ -241,3 +257,4 @@ ul li span {
 ul li img, ul li span {
     margin-right: 7.5px;  
 }
+

@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import json
 from tools_json import load_data, save_data
-from compare_proximity import compare_with_different_person, sort_compatibility_between_users, get_dico
+from compare_proximity import compare_with_different_person, sort_compatibility_between_users, get_dico, representation_person_on_plan
 
 
 site = Flask(__name__)
@@ -35,14 +35,14 @@ def submit_and_verify():
         compatibilite = compare_with_different_person(nom)
         sort_number, sort_people = sort_compatibility_between_users(current_person)
         dico = get_dico()
-
+        
         sort_people_display = [
         f"{dico[person]['presentation']['prenom']} {dico[person]['presentation']['nom']}"
         if person in dico else person 
         for person in sort_people
         ]
-
-        return render_template("submitv2.html", sort_number=sort_number, sort_people=sort_people_display, compatibilite=compatibilite) 
+        positions = representation_person_on_plan(current_person)
+        return render_template("submitv2.html", sort_number=sort_number, sort_people=sort_people_display, positions=positions) 
   
 
 def button_clicked():

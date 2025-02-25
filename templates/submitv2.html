@@ -13,7 +13,7 @@
 <body>
     <div id="main" class="principal2">
         <a href="/" class="bouton bouton_retour">
-            <img src="{{ url_for('static', filename='images/fleche-arriere.png') }}" height="30px" width="30px"/>
+            <img src="{{ url_for('static', filename='images/fleche-arriere.png') }}" height="30px" width="30px" />
         </a>
         <center>
             <h1>Trouvez votre mate</h1>
@@ -24,13 +24,13 @@
                 <li>
                     {# Choix de l'image selon le rang (exemple) #}
                     {% if loop.index == 1 %}
-                        <img src="{{ url_for('static', filename='images/trophee1.png') }}" alt="Trophée Or">
+                    <img src="{{ url_for('static', filename='images/trophee1.png') }}" alt="Trophée Or">
                     {% elif loop.index == 2 %}
-                        <img src="{{ url_for('static', filename='images/trophee2.png') }}" alt="Trophée Argent">
+                    <img src="{{ url_for('static', filename='images/trophee2.png') }}" alt="Trophée Argent">
                     {% elif loop.index == 3 %}
-                        <img src="{{ url_for('static', filename='images/trophee3.png') }}" alt="Trophée Bronze">
-                        {% else %}
-                        <span>→</span>  {# flèche pour les autres rangs #}
+                    <img src="{{ url_for('static', filename='images/trophee3.png') }}" alt="Trophée Bronze">
+                    {% else %}
+                    <span>→</span> {# flèche pour les autres rangs #}
                     {% endif %}
                     <strong>{{ person }}</strong> : {{ sort_number[loop.index0] }}%
                 </li>
@@ -39,6 +39,7 @@
             </ul>
         </div>
         <div class="bloc2">
+            
             <div class="circle circle3"></div>
             <div class="circle circle2"></div>
             <div class="circle circle1"></div>
@@ -46,6 +47,14 @@
             <div class="ripple"></div>
             <div class="ripple"></div>
             <div class="ripple"></div>
+            {% for position in positions %}
+                <div class="personne" style="left: calc(50% + {{ position.x }}px); top: calc(50% + {{ position.y }}px);">
+                    {{ position.name }}
+                </div>
+            {% endfor %}
         </div>
+        
     </div>
 </body>
+
+</html>
