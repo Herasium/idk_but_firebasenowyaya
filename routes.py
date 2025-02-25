@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import json
-
+from tools_json import load_data, save_data
+from compare_proximity import compare_with_different_person
 
 site = Flask(__name__)
 site.secret_key = "secret_key_for_flashing"
@@ -22,7 +23,7 @@ def submit_and_verify():
     interet = request.form.get("interet")
     couleur = request.form.get("couleur")
     personne = "person_2"
-    # compatibilite = main.compare_with_different_person(personne)
+
     
 
     if not all([prenom, nom, age, taille, interet, couleur]):
@@ -30,9 +31,9 @@ def submit_and_verify():
         return redirect(url_for("bonjour"))
     else :
         save_info_in_dico()
-        return render_template("submitv2.html") 
-    # return render_template("submitv2.html", compatibilite=compatibilite) 
-
+        compatibilite = compare_with_different_person(nom)
+        return render_template("submitv2.html", compatibilite=compatibilite) 
+  
 
 def button_clicked():
     button = site.route('/submit', methods=['POST'])
@@ -56,18 +57,6 @@ def save_info ():
         }
     }
     
-
-def load_data():
-    try:
-        with open(FILE_PATH, 'r') as file:
-            return json.load(file)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return {}
-
-def save_data(data):
-    with open(FILE_PATH, 'w') as file:
-        json.dump(data, file, indent=4)
-
 def save_info_in_dico():
     data = save_info()
     data_dict = load_data()
@@ -80,6 +69,8 @@ def save_info_in_dico():
             person_id: data
         })
     save_data(data_dict)
+
+
 
 
 if __name__ == '__main__':
