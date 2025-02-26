@@ -19,6 +19,9 @@ def compare_proximity(people, person):
         if dico[person]["info_perso"].get(caracter) == dico[people]["info_perso"].get(caracter):
             numerateur += coef.get(caracter, 0)
         denominateur += coef.get(caracter, 0)
+    # if denominateur == 0:
+    #     return 0.0
+    # return round((numerateur / denominateur) * 100, 1)
     if denominateur == 0:
         return 0.0
     compatibilite = (numerateur / denominateur) * 100
@@ -87,8 +90,8 @@ def representation_person_on_plan(person):
     angle = 0
 
     for people, distance in dico_distance_personne.items():
-        coordonnee_x = cos(radians(angle)) * (50 + 150 *distance/100)
-        coordonnee_y = sin(radians(angle)) * (50 + 150 *distance/100)
+        coordonnee_x = cos(radians(angle)) * (50 + 160 *distance/100)
+        coordonnee_y = sin(radians(angle)) * (50 + 160 *distance/100)
         
         positions.append({
             'name': people,
