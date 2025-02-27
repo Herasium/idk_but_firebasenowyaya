@@ -48,8 +48,9 @@
             <div class="ripple"></div>
             <div class="ripple"></div>
             {% for position in positions %}
-                <div class="personne" style="left: calc(50% + {{ position.x }}px); top: calc(50% + {{ position.y }}px);">
-                    {{ position.name }}
+                <div class="carte" style="left: calc(50% + {{ position.x }}px); top: calc(50% + {{ position.y }}px);">
+                    <div class="personne"></div>
+                  <span class="nom">{{ position.name }}</span>
                 </div>
             {% endfor %}
         </div>
