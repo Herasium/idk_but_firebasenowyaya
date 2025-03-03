@@ -1,11 +1,11 @@
 {
     "coef": {
-        "interet": 9,
+        "interet": 5,
         "age": 5,
-        "taille": 3,
+        "taille": 5,
         "couleur pr\u00c3\u00a9f\u00c3\u00a9r\u00c3\u00a9e": 9,
         "matiere": 5,
-        "plat": 8,
+        "plat": 5,
         "couleur": 5
     },
     "dico": [
@@ -247,6 +247,38 @@
                     "couleur": "Bleu",
                     "matiere": "Maths",
                     "plat": "Pizza"
+                }
+            }
+        },
+        {
+            "de khovrine": {
+                "presentation": {
+                    "prenom": "Eutocie",
+                    "nom": "de Khovrine"
+                },
+                "info_perso": {
+                    "age": "14 ans",
+                    "taille": "150/160 cm",
+                    "interet": "manger",
+                    "couleur": "Bleu",
+                    "matiere": "Maths",
+                    "plat": "P\u00e2tes"
+                }
+            }
+        },
+        {
+            "gunnarsson": {
+                "presentation": {
+                    "prenom": "Emil",
+                    "nom": "Gunnarsson"
+                },
+                "info_perso": {
+                    "age": "14 ans",
+                    "taille": "150/160 cm",
+                    "interet": "manger",
+                    "couleur": "Bleu",
+                    "matiere": "Maths",
+                    "plat": "P\u00e2tes"
                 }
             }
         }
