@@ -1,9 +1,10 @@
+
 {
     "coef": {
         "interet": 3,
         "age": 3,
         "taille": 6,
-        "couleur pr\u00e9f\u00e9r\u00e9e": 9,
+        "couleur préférée": 9,
         "matiere": 7,
         "plat": 5
     },
@@ -15,13 +16,12 @@
                     "nom": "de Khovrine"
                 },
                 "info_perso": {
-                    "genre": "fille",
-                    "interet": "manger",
+                    "interet": "faire du sport",
                     "age": "16 ans",
-                    "taille": "110/130 cm",
-                    "couleur pr\u00e9f\u00e9r\u00e9e": "violet",
-                    "matiere": "Maths",
-                    "plat": "Pizza"
+                    "taille": "160/170 cm",
+                    "couleur préférée": "violet",
+                    "matiere": "NSI",
+                    "plat": "Burger"
                 }
             }
         },
@@ -35,9 +35,9 @@
                     "genre": "fille",
                     "interet": "dormir",
                     "age": "16 ans",
-                    "taille": "110/130 cm",
-                    "couleur pr\u00e9f\u00e9r\u00e9e": "rouge",
-                    "matiere": "Francais",
+                    "taille": "160/170 cm",
+                    "couleur préférée": "Rouge",
+                    "matiere": "NSI",
                     "plat": "Pates"
                 }
             }
@@ -45,283 +45,198 @@
         {
             "person_3": {
                 "presentation": {
-                    "prenom": "Louise",
-                    "nom": "Christophe"
+                    "prenom": "Tristan",
+                    "nom": "Bonnière"
                 },
                 "info_perso": {
-                    "genre": "fille",
-                    "interet": "dormir",
-                    "age": "16 ans",
-                    "taille": "160/180 cm",
-                    "couleur pr\u00e9f\u00e9r\u00e9e": "bleu"
-                }
-            }
-        },
-        {
-            "dupont": {
-                "presentation": {
-                    "prenom": "anna",
-                    "nom": "dupont"
-                },
-                "info_perso": {
-                    "age": "17 ans",
-                    "taille": "170/180 cm",
-                    "interet": "faire du sport",
-                    "couleur": "Jaune"
-                }
-            }
-        },
-        {
-            "aaaa": {
-                "presentation": {
-                    "prenom": "aaa",
-                    "nom": "aaaa"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu"
-                }
-            }
-        },
-        {
-            "aaaa": {
-                "presentation": {
-                    "prenom": "aaa",
-                    "nom": "aaaa"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu"
-                }
-            }
-        },
-        {
-            "aaaa": {
-                "presentation": {
-                    "prenom": "aaa",
-                    "nom": "aaaa"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu"
-                }
-            }
-        },
-        {
-            "aaaa": {
-                "presentation": {
-                    "prenom": "aaa",
-                    "nom": "aaaa"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu"
-                }
-            }
-        },
-        {
-            "aaaa": {
-                "presentation": {
-                    "prenom": "aaa",
-                    "nom": "aaaa"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu"
-                }
-            }
-        },
-        {
-            "aaaa": {
-                "presentation": {
-                    "prenom": "aaa",
-                    "nom": "aaaa"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu"
-                }
-            }
-        },
-        {
-            "aaaa": {
-                "presentation": {
-                    "prenom": "aaa",
-                    "nom": "aaaa"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu"
-                }
-            }
-        },
-        {
-            "aa": {
-                "presentation": {
-                    "prenom": "aa",
-                    "nom": "aa"
-                },
-                "info_perso": {
-                    "age": "15 ans",
-                    "taille": "160/170 cm",
                     "interet": "jouer",
-                    "couleur": "Rouge"
-                }
-            }
-        },
-        {
-            "bb": {
-                "presentation": {
-                    "prenom": "bb",
-                    "nom": "bb"
-                },
-                "info_perso": {
                     "age": "17 ans",
-                    "taille": "160/170 cm",
-                    "interet": "dormir",
-                    "couleur": "Jaune"
-                }
-            }
-        },
-        {
-            "cc": {
-                "presentation": {
-                    "prenom": "cc",
-                    "nom": "cc"
-                },
-                "info_perso": {
-                    "age": "16 ans",
-                    "taille": "170/180 cm",
-                    "interet": "programmer",
-                    "couleur": "Orange"
-                }
-            }
-        },
-        {
-            "vv": {
-                "presentation": {
-                    "prenom": "vv",
-                    "nom": "vv"
-                },
-                "info_perso": {
-                    "age": "18 ans",
-                    "taille": "170/180 cm",
-                    "interet": "programmer",
-                    "couleur": "Orange"
-                }
-            }
-        },
-        {
-            "d": {
-                "presentation": {
-                    "prenom": "d",
-                    "nom": "d"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu",
-                    "matiere": "Sport"
-                }
-            }
-        },
-        {
-            "test": {
-                "presentation": {
-                    "prenom": "test",
-                    "nom": "test"
-                },
-                "info_perso": {
-                    "age": "16 ans",
                     "taille": "180/190 cm",
+                    "couleur préférée": "Rouge",
+                    "matiere": "Histoire",
+                    "plat": "Sushi"
+
+                }
+            }
+        },
+        {
+            "person_4": {
+                "presentation": {
+                    "prenom": "Roman",
+                    "nom": "Baranovskii"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "190/200 cm",
                     "interet": "faire du sport",
                     "couleur": "Orange",
-                    "matiere": "Physique-Chimie",
-                    "plat": "Brocoli"
-                }
-            }
-        },
-        {
-            "test": {
-                "presentation": {
-                    "prenom": "test",
-                    "nom": "test"
-                },
-                "info_perso": {
-                    "age": "16 ans",
-                    "taille": "180/190 cm",
-                    "interet": "faire du sport",
-                    "couleur": "Orange",
-                    "matiere": "Physique-Chimie",
-                    "plat": "Brocoli"
-                }
-            }
-        },
-        {
-            "test": {
-                "presentation": {
-                    "prenom": "test",
-                    "nom": "test"
-                },
-                "info_perso": {
-                    "age": "16 ans",
-                    "taille": "180/190 cm",
-                    "interet": "faire du sport",
-                    "couleur": "Orange",
-                    "matiere": "Physique-Chimie",
-                    "plat": "Brocoli"
-                }
-            }
-        },
-        {
-            "Christophe": {
-                "presentation": {
-                    "prenom": "Louise",
-                    "nom": "Christophe"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu",
-                    "matiere": "Maths",
-                    "plat": "P\u00e2tes"
-                }
-            }
-        },
-        {
-            "Christophe": {
-                "presentation": {
-                    "prenom": "Louise",
-                    "nom": "Christophe"
-                },
-                "info_perso": {
-                    "age": "15 ans",
-                    "taille": "160/170 cm",
-                    "interet": "programmer",
-                    "couleur": "Rouge",
-                    "matiere": "Physique-Chimie",
+                    "matiere": "Sport",
                     "plat": "Pizza"
                 }
             }
         },
         {
-            "Christophe": {
+            "person_5": {
+                "presentation": {
+                    "prenom": "Julian",
+                    "nom": "Bidault"
+                },
+                "info_perso": {
+                    "age": "17 ans",
+                    "taille": "170/180 cm",
+                    "interet": "manger",
+                    "couleur": "Bleu",
+                    "matiere": "Sport",
+                    "plat": "Pates"
+                }
+            }
+        },
+        {
+            "person_6": {
+                "presentation": {
+                    "prenom": "Nolan",
+                    "nom": "Smadja"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "190/200 cm",
+                    "interet": "programmer",
+                    "couleur": "Jaune",
+                    "matiere": "Histoire",
+                    "plat": "Pates"
+                }
+            }
+        },
+        {
+            "person_7": {
+                "presentation": {
+                    "prenom": "Tom",
+                    "nom": "Waksman"
+                },
+                "info_perso": {
+                    "age": "17 ans",
+                    "taille": "170/180 cm",
+                    "interet": "dormir",
+                    "couleur": "Bleu",
+                    "matiere": "Maths",
+                    "plat": "Pizza"
+                }
+            }
+        },
+        {
+            "person_8": {
+                "presentation": {
+                    "prenom": "Emil",
+                    "nom": "Gunnarsson"
+                },
+                "info_perso": {
+                    "age": "15 ans",
+                    "taille": "170/180 cm",
+                    "interet": "faire du sport",
+                    "couleur": "Orange",
+                    "matiere": "Maths",
+                    "plat": "Sushi"
+                }
+            }
+        },
+        {
+            "person_9": {
+                "presentation": {
+                    "prenom": "Victor",
+                    "nom": "Cornille"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "180/190 cm",
+                    "interet": "jouer",
+                    "couleur": "Violet",
+                    "matiere": "Maths",
+                    "plat": "Pates"
+                }
+            }
+        },
+        {
+            "person_10": {
+                "presentation": {
+                    "prenom": "Maxime",
+                    "nom": "Bourgain"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "180/190 cm",
+                    "interet": "faire du sport",
+                    "couleur": "Vert",
+                    "matiere": "Maths",
+                    "plat": "Burger"
+                }
+            }
+        },
+        {
+            "person_11": {
+                "presentation": {
+                    "prenom": "Raphaël",
+                    "nom": "Okabe"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "160/170 cm",
+                    "interet": "faire du sport",
+                    "couleur": "Bleu",
+                    "matiere": "Maths",
+                    "plat": "Burger"
+                }
+            }
+        },
+        {
+            "person_12": {
+                "presentation": {
+                    "prenom": "Raphaël ",
+                    "nom": "Poinsignon"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "180/190 cm",
+                    "interet": "jouer",
+                    "couleur": "Bleu",
+                    "matiere": "Maths",
+                    "plat": "Pates"
+                }
+            }
+        },
+        {
+            "person_13": {
+                "presentation": {
+                    "prenom": "Matheo",
+                    "nom": "dz"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "170/180 cm",
+                    "interet": "jouer",
+                    "couleur": "Bleu",
+                    "matiere": "Sport",
+                    "plat": "Pizza"
+                }
+            }
+        },       
+        {
+            "person_14": {
+                "presentation": {
+                    "prenom": "Jules",
+                    "nom": "Bock"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "180/190 cm",
+                    "interet": "faire du sport",
+                    "couleur": "Bleu",
+                    "matiere": "Maths",
+                    "plat": "Sushi"
+                }
+            }
+        },
+        {
+            "person_15": {
                 "presentation": {
                     "prenom": "Louise ",
                     "nom": "Christophe"
@@ -337,23 +252,7 @@
             }
         },
         {
-            "Christophe": {
-                "presentation": {
-                    "prenom": "Louise ",
-                    "nom": "Christophe"
-                },
-                "info_perso": {
-                    "age": "16 ans",
-                    "taille": "170/180 cm",
-                    "interet": "dormir",
-                    "couleur": "Bleu",
-                    "matiere": "Maths",
-                    "plat": "Brocoli"
-                }
-            }
-        },
-        {
-            "Christophe": {
+            "person_16": {
                 "presentation": {
                     "prenom": "Louise ",
                     "nom": "Christophe"
@@ -364,12 +263,12 @@
                     "interet": "manger",
                     "couleur": "Bleu",
                     "matiere": "Maths",
-                    "plat": "P\u00e2tes"
+                    "plat": "Pates"
                 }
             }
         },
         {
-            "Christophe": {
+            "person_17": {
                 "presentation": {
                     "prenom": "Louise ",
                     "nom": "Christophe"
@@ -380,7 +279,7 @@
                     "interet": "manger",
                     "couleur": "Bleu",
                     "matiere": "Maths",
-                    "plat": "P\u00e2tes"
+                    "plat": "Pates"
                 }
             }
         }
