@@ -22,10 +22,11 @@ def submit_and_verify():
     taille = request.form.get("taille")
     interet = request.form.get("interet")
     couleur = request.form.get("couleur")
+    matiere = request.form.get("matiere")
 
     
 
-    if not all([prenom, nom, age, taille, interet, couleur]):
+    if not all([prenom, nom, age, taille, interet, couleur, matiere]):
         flash("Tous les champs doivent être remplis !", "error")
         return redirect(url_for("bonjour"))
     else :
@@ -60,7 +61,8 @@ def save_info ():
             "age" : request.form.get('age'),
             "taille" : request.form.get('taille'),
             "interet" : request.form.get('interet'),
-            "couleur" : request.form.get('couleur')
+            "couleur" : request.form.get('couleur'),
+            "matiere" : request.form.get('matiere')
         }
     }
     
