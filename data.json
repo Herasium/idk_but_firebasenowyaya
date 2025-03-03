@@ -271,6 +271,22 @@
                     "plat": "Brocoli"
                 }
             }
+        },
+        {
+            "test": {
+                "presentation": {
+                    "prenom": "test",
+                    "nom": "test"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "180/190 cm",
+                    "interet": "faire du sport",
+                    "couleur": "Orange",
+                    "matiere": "Physique-Chimie",
+                    "plat": "Brocoli"
+                }
+            }
         }
     ]
 }

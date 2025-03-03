@@ -25,9 +25,7 @@ def compare_proximity(people, person):
         ):
             numerateur += coef.get(caracter, 0)
         denominateur += coef.get(caracter, 0)
-    # if denominateur == 0:
-    #     return 0.0
-    # return round((numerateur / denominateur) * 100, 1)
+
     if denominateur == 0:
         return 0.0
     compatibilite = (numerateur / denominateur) * 100
