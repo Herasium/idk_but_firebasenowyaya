@@ -10,7 +10,7 @@
     },
     "dico": [
         {
-            "person_1": {
+            "de Khovrine": {
                 "presentation": {
                     "prenom": "Eudocie",
                     "nom": "de Khovrine"
@@ -19,14 +19,14 @@
                     "interet": "faire du sport",
                     "age": "16 ans",
                     "taille": "160/170 cm",
-                    "couleur pr\u00c3\u00a9f\u00c3\u00a9r\u00c3\u00a9e": "violet",
+                    "couleur preferee": "violet",
                     "matiere": "NSI",
                     "plat": "Burger"
                 }
             }
         },
         {
-            "person_2": {
+            "Fraboulet": {
                 "presentation": {
                     "prenom": "Marine",
                     "nom": "Fraboulet"
@@ -36,30 +36,30 @@
                     "interet": "dormir",
                     "age": "16 ans",
                     "taille": "160/170 cm",
-                    "couleur pr\u00c3\u00a9f\u00c3\u00a9r\u00c3\u00a9e": "Rouge",
+                    "couleur preferee": "Rouge",
                     "matiere": "NSI",
                     "plat": "Pates"
                 }
             }
         },
         {
-            "person_3": {
+            "Bonniere": {
                 "presentation": {
                     "prenom": "Tristan",
-                    "nom": "Bonni\u00c3\u00a8re"
+                    "nom": "Bonniere"
                 },
                 "info_perso": {
                     "interet": "jouer",
                     "age": "17 ans",
                     "taille": "180/190 cm",
-                    "couleur pr\u00c3\u00a9f\u00c3\u00a9r\u00c3\u00a9e": "Rouge",
+                    "couleur preferee": "Rouge",
                     "matiere": "Histoire",
                     "plat": "Sushi"
                 }
             }
         },
         {
-            "person_4": {
+            "Baranovskii": {
                 "presentation": {
                     "prenom": "Roman",
                     "nom": "Baranovskii"
@@ -75,7 +75,7 @@
             }
         },
         {
-            "person_5": {
+            "Bidault": {
                 "presentation": {
                     "prenom": "Julian",
                     "nom": "Bidault"
@@ -91,7 +91,7 @@
             }
         },
         {
-            "person_6": {
+            "Smadja": {
                 "presentation": {
                     "prenom": "Nolan",
                     "nom": "Smadja"
@@ -107,7 +107,7 @@
             }
         },
         {
-            "person_7": {
+            "Waksman": {
                 "presentation": {
                     "prenom": "Tom",
                     "nom": "Waksman"
@@ -123,7 +123,7 @@
             }
         },
         {
-            "person_8": {
+            "Gunnarsson": {
                 "presentation": {
                     "prenom": "Emil",
                     "nom": "Gunnarsson"
@@ -139,7 +139,7 @@
             }
         },
         {
-            "person_9": {
+            "Cornille": {
                 "presentation": {
                     "prenom": "Victor",
                     "nom": "Cornille"
@@ -155,7 +155,7 @@
             }
         },
         {
-            "person_10": {
+            "Bourgain": {
                 "presentation": {
                     "prenom": "Maxime",
                     "nom": "Bourgain"
@@ -171,9 +171,9 @@
             }
         },
         {
-            "person_11": {
+            "Okabe": {
                 "presentation": {
-                    "prenom": "Rapha\u00c3\u00abl",
+                    "prenom": "Raphael",
                     "nom": "Okabe"
                 },
                 "info_perso": {
@@ -187,9 +187,9 @@
             }
         },
         {
-            "person_12": {
+            "Poinsignon": {
                 "presentation": {
-                    "prenom": "Rapha\u00c3\u00abl ",
+                    "prenom": "Raphael ",
                     "nom": "Poinsignon"
                 },
                 "info_perso": {
@@ -203,7 +203,7 @@
             }
         },
         {
-            "person_13": {
+            "dz": {
                 "presentation": {
                     "prenom": "Matheo",
                     "nom": "dz"
@@ -219,7 +219,7 @@
             }
         },
         {
-            "person_14": {
+            "Bock": {
                 "presentation": {
                     "prenom": "Jules",
                     "nom": "Bock"
@@ -235,18 +235,18 @@
             }
         },
         {
-            "Christophe": {
+            "Belhaddad": {
                 "presentation": {
-                    "prenom": "Louise ",
-                    "nom": "Christophe"
+                    "prenom": "Wael",
+                    "nom": "Belhaddad"
                 },
                 "info_perso": {
                     "age": "16 ans",
                     "taille": "170/180 cm",
-                    "interet": "dormir",
-                    "couleur": "Bleu",
-                    "matiere": "Maths",
-                    "plat": "Pizza"
+                    "interet": "manger",
+                    "couleur": "Jaune",
+                    "matiere": "Physique-Chimie",
+                    "plat": "Sushi"
                 }
             }
         },
