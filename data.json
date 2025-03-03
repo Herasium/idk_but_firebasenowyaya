@@ -249,38 +249,6 @@
                     "plat": "Sushi"
                 }
             }
-        },
-        {
-            "de khovrine": {
-                "presentation": {
-                    "prenom": "Eutocie",
-                    "nom": "de Khovrine"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu",
-                    "matiere": "Maths",
-                    "plat": "P\u00e2tes"
-                }
-            }
-        },
-        {
-            "gunnarsson": {
-                "presentation": {
-                    "prenom": "Emil",
-                    "nom": "Gunnarsson"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu",
-                    "matiere": "Maths",
-                    "plat": "P\u00e2tes"
-                }
-            }
         }
     ]
 }
