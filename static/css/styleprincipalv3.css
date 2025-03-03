@@ -1,11 +1,11 @@
 :root {
-    --main-bg-color: #ffe4e1; 
-    --primary-color: #ff4500; 
-    --secondary-color: #ff6347; 
-    --text-color: #333; 
-    --button-bg-color: #ff4500; 
-    --button-hover-color: #ff0000; 
-    --button-active-color: #b22222; 
+    --main-bg-color: #ffe4e1;
+    --primary-color: #ff4500;
+    --secondary-color: #ff6347;
+    --text-color: #333;
+    --button-bg-color: #ff4500;
+    --button-hover-color: #ff0000;
+    --button-active-color: #b22222;
 }
 
 body {
@@ -32,7 +32,8 @@ h1 {
 }
 
 /* PRESENTATION */
-.principal, .principal2 {
+.principal,
+.principal2 {
     width: 80%;
     max-width: 1000px;
     margin: 20px auto;
@@ -81,19 +82,32 @@ h1 {
     position: relative;
     min-height: 500px;
 }
+
 /* CARTE */
-.personne {
+.carte {
     position: absolute;
+    z-index: 4;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.personne {
     width: 10px;
     height: 10px;
-    background: rgb(0, 0, 0);
+    background: rgb(137, 4, 4);
     border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    color: white;
+    line-height: 1em;
     font-size: 12px;
-    transform: translate(-50%, -50%); 
-    z-index: 4;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+}
+
+.nom {
+    white-space: nowrap;
+    color: var(--primary-color);
+    font-size: 12px;
+    line-height: 1em;
+
 
 }
 
@@ -114,8 +128,8 @@ h1 {
 }
 
 .circle2 {
-    width: 235px;
-    height: 235px;
+    width: 260px;
+    height: 260px;
     background: rgb(255, 123, 123);
     z-index: 2;
     opacity: 0.7;
@@ -159,9 +173,11 @@ h1 {
 .container .ripple:nth-child(2) {
     animation-delay: 0s;
 }
+
 .container .ripple:nth-child(3) {
     animation-delay: 0.5s;
 }
+
 .container .ripple:nth-child(4) {
     animation-delay: 1s;
 }
@@ -173,6 +189,7 @@ h1 {
         opacity: 1;
         border-color: rgba(255, 152, 152, 0.8);
     }
+
     100% {
         width: 560px;
         height: 560px;
@@ -182,11 +199,12 @@ h1 {
 }
 
 /* INPUTS */
-.input-entry, .input-menu {
+.input-entry,
+.input-menu {
     display: block;
     margin: 10px 30px;
     padding: 10px;
-    width: calc(50% - 60px); 
+    width: calc(50% - 60px);
     font-size: 14px;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
@@ -195,12 +213,14 @@ h1 {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.input-entry:hover, .input-menu:hover {
-    background-color: #ffcccb; 
+.input-entry:hover,
+.input-menu:hover {
+    background-color: #ffcccb;
 }
 
-.input-entry:active, .input-menu:active {
-    background-color: #ff9999; 
+.input-entry:active,
+.input-menu:active {
+    background-color: #ff9999;
     transform: scale(0.95);
 }
 
@@ -223,12 +243,14 @@ h1 {
     display: inline-block;
 }
 
-.bouton:hover, .bouton_retour:hover {
+.bouton:hover,
+.bouton_retour:hover {
     background-color: var(--button-hover-color);
     transform: scale(1.05);
 }
 
-.bouton:active, .bouton_retour:active {
+.bouton:active,
+.bouton_retour:active {
     background-color: var(--button-active-color);
     transform: scale(0.95);
 }
@@ -242,19 +264,20 @@ h1 {
     text-align: center;
     margin: 20px 0;
 }
+
 /* LISTE */
 ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
 }
 
 ul li span {
-    color: #000;  
-    font-size: 20px;  
-    margin-left: 5px;  
+    color: #000;
+    font-size: 20px;
+    margin-left: 5px;
 }
 
-ul li img, ul li span {
-    margin-right: 7.5px;  
+ul li img,
+ul li span {
+    margin-right: 7.5px;
 }
-

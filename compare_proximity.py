@@ -5,9 +5,13 @@ from tools_json import load_data
 data = load_data()
 coef = data.get("coef", {})
 
+
 def get_dico():
     data = load_data()
-    return {list(person.keys())[0].strip().lower(): list(person.values())[0] for person in data.get("dico", [])}
+    return {
+        list(person.keys())[0].strip().lower(): list(person.values())[0]
+        for person in data.get("dico", [])
+    }
 
 
 def compare_proximity(people, person):
@@ -16,7 +20,9 @@ def compare_proximity(people, person):
     denominateur = 0
 
     for caracter in dico[people]["info_perso"].keys():
-        if dico[person]["info_perso"].get(caracter) == dico[people]["info_perso"].get(caracter):
+        if dico[person]["info_perso"].get(caracter) == dico[people]["info_perso"].get(
+            caracter
+        ):
             numerateur += coef.get(caracter, 0)
         denominateur += coef.get(caracter, 0)
     # if denominateur == 0:
@@ -27,12 +33,13 @@ def compare_proximity(people, person):
     compatibilite = (numerateur / denominateur) * 100
     return round(min(100, compatibilite), 1)
 
+
 def compare_with_different_person(person):
     dico = get_dico()
     person = person.strip().lower()
     dico_compatibilite = {}
     for people in dico.keys():
-        if people != person:  
+        if people != person:
             if people in dico and person in dico:
                 moyenne = compare_proximity(people, person)
                 dico_compatibilite[people] = moyenne
@@ -40,13 +47,16 @@ def compare_with_different_person(person):
                 print(f"Erreur : Clé '{people}' ou '{person}' non trouvée dans dico")
     return dico_compatibilite
 
+
 def list_of_compatibilite(person):
     dico_compatibilite = compare_with_different_person(person)
     return list(dico_compatibilite.values())
 
+
 def list_of_people(person):
     dico_compatibilite = compare_with_different_person(person)
     return list(dico_compatibilite.keys())
+
 
 def sort_compatibility_between_users(person):
     sort_number = []
@@ -66,6 +76,7 @@ def sort_compatibility_between_users(person):
         del list_number[max_index]
     return sort_number, sort_people
 
+
 def distance_with_people(person):
     sort_distance = []
     sort_number, _ = sort_compatibility_between_users(person)
@@ -74,6 +85,7 @@ def distance_with_people(person):
         distance = 100 - sort_number[i]
         sort_distance.append(distance)
     return sort_distance, sort_people
+
 
 def dico_distance(person):
     dico_distance_person = {}
@@ -88,22 +100,22 @@ def representation_person_on_plan(person):
     dico_distance_personne = dico_distance(person)
     angleinter = 360 / len(dico_distance_personne)
     angle = 0
-
+    dico = get_dico()
     for people, distance in dico_distance_personne.items():
-        coordonnee_x = cos(radians(angle)) * (50 + 160 *distance/100)
-        coordonnee_y = sin(radians(angle)) * (50 + 160 *distance/100)
-        
-        positions.append({
-            'name': people,
-            'x': coordonnee_x,
-            'y': coordonnee_y
-        })
+        coordonnee_x = cos(radians(angle)) * (50 + 160.0 * distance / 100.0)
+        coordonnee_y = sin(radians(angle)) * (50 + 160.0 * distance / 100.0)
+
+        positions.append(
+            {
+                "name": f"{dico[people]['presentation']['prenom']} {dico[people]['presentation']['nom']}",
+                "x": coordonnee_x,
+                "y": coordonnee_y,
+            }
+        )
         angle = angle + angleinter
 
     print(positions)
     return positions
-
-
 
 
 # print("Compatibilité brute :", compare_with_different_person("person_2"))
