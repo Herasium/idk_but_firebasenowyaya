@@ -1,6 +1,6 @@
 {
     "coef": {
-        "interet": 10,
+        "interet": 3,
         "age": 3,
         "taille": 6,
         "couleur pr\u00e9f\u00e9r\u00e9e": 9,
@@ -304,6 +304,44 @@
                 },
                 "coef": {
                     "interet": 10
+                }
+            }
+        },
+        {
+            "de Khovrine6": {
+                "presentation": {
+                    "prenom": "Eudocie",
+                    "nom": "de Khovrine6"
+                },
+                "info_perso": {
+                    "age": "14 ans",
+                    "taille": "150/160 cm",
+                    "interet": "manger",
+                    "couleur": "Bleu",
+                    "matiere": "Maths",
+                    "plat": "P\u00e2tes"
+                },
+                "coef": {
+                    "interet": 6
+                }
+            }
+        },
+        {
+            "de Khov": {
+                "presentation": {
+                    "prenom": "Eudoc",
+                    "nom": "de Khov"
+                },
+                "info_perso": {
+                    "age": "14 ans",
+                    "taille": "150/160 cm",
+                    "interet": "manger",
+                    "couleur": "Bleu",
+                    "matiere": "Maths",
+                    "plat": "P\u00e2tes"
+                },
+                "coef": {
+                    "interet": 3
                 }
             }
         }
