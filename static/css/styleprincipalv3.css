@@ -211,6 +211,8 @@ h1 {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     color: var(--text-color);
     transition: background-color 0.3s, transform 0.2s;
+    width: 50%;
+
 }
 
 .input-entry:hover,
@@ -303,4 +305,15 @@ ul li span {
 
 .ticks span {
     font-size: 14px;
+}
+
+.slider-container, .slider, .ticks, .ticks span {
+    margin-top: auto;
+}
+
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

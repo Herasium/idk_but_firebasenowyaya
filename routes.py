@@ -24,13 +24,19 @@ def submit_and_verify():
     couleur = request.form.get("couleur")
     matiere = request.form.get("matiere")
     plat = request.form.get("plat")
-    selected_value_interet = request.form.get("slider_value", 3)
+    selected_value_interet = request.form.get("slider_value_interet", 5)
+    selected_value_age = request.form.get("slider_value_age", 5)
+    selected_value_taille = request.form.get("slider_value_taille", 5)
+    selected_value_couleur = request.form.get("slider_value_couleur", 5)
+    selected_value_matiere = request.form.get("slider_value_matiere", 5)
+    selected_value_plat = request.form.get("slider_value_plat", 5)
     
 
-    if not all([prenom, nom, age, taille, interet, couleur, matiere, plat, selected_value_interet]):
+    if not all([prenom, nom, age, taille, interet, couleur, matiere, plat, selected_value_interet, selected_value_age, selected_value_taille, selected_value_couleur, selected_value_matiere, selected_value_plat]):
         flash("Tous les champs doivent être remplis !", "error")
         return redirect(url_for("bonjour"))
     else :
+        update_coef()
         save_info_in_dico()
         current_person = nom.strip().lower()
         sort_number, sort_people = sort_compatibility_between_users(current_person)
@@ -65,7 +71,15 @@ def save_info ():
             "couleur" : request.form.get('couleur'),
             "matiere" : request.form.get('matiere'),
             "plat" : request.form.get('plat')
-        }
+            }
+        # "coef": {
+        #     "interet": int(request.form.get("slider_value_interet", 5)),
+        #     "age" : int(request.form.get("slider_value_age", 5)),
+        #     "taille" : int(request.form.get("slider_value_taille", 5)),
+        #     "couleur" : int(request.form.get("slider_value_couleur", 5)),
+        #     "matiere" : int(request.form.get("slider_value_matiere", 5)),
+        #     "plat" : int(request.form.get("slider_value_plat",  5))   
+        # }
     }
     
 def save_info_in_dico():
@@ -81,8 +95,18 @@ def save_info_in_dico():
         })
     save_data(data_dict)
 
+def update_coef():
+    data_dict = load_data()  
+    if "coef" not in data_dict:
+        data_dict["coef"] = {}
 
-
+    data_dict["coef"]["interet"] = int(request.form.get("slider_value_interet", 5))
+    data_dict["coef"]["age"] = int(request.form.get("slider_value_age", 5))
+    data_dict["coef"]["taille"] = int(request.form.get("slider_value_taille", 5))
+    data_dict["coef"]["couleur"] = int(request.form.get("slider_value_couleur", 5))
+    data_dict["coef"]["matiere"] = int(request.form.get("slider_value_matiere", 5))
+    data_dict["coef"]["plat"] = int(request.form.get("slider_value_plat", 5))     
+    save_data(data_dict) 
 
 if __name__ == '__main__':
     site.run(debug=True)
