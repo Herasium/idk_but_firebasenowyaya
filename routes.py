@@ -99,11 +99,7 @@ def save_info_in_dico(prenom, nom, age, taille, interet, couleur, matiere, plat)
             save_data(data_dict)
             return
 
-<<<<<<< HEAD
     
-=======
-    # Si la personne n'existe pas, ajouter ses informations
->>>>>>> cf3484c8a3ad599b4765cadbb04101795130dfc6
     data_dict["dico"].append({
         person_id: {
             "presentation": {"prenom": prenom, "nom": nom},
