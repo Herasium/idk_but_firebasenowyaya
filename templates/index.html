@@ -59,7 +59,7 @@
                                 </select>
                             </td>
                             <td>
-                                <p class="entry">Entrez le coefficient pour l'intéret :</p>
+                                <p class="entry">Entrez le coefficient pour l'âge :</p>
                                 <div class="slider-container">
                                     <input type="range" id="slider_age" name="slider_value_age" min="1" max="10"
                                         value="{{ selected_value_interet }}" class="slider"
@@ -85,7 +85,7 @@
                                 </select>
                             </td>
                             <td>
-                                <p class="entry">Entrez le coefficient pour l'intéret :</p>
+                                <p class="entry">Entrez le coefficient pour la taille :</p>
                                 <div class="slider-container">
                                     <input type="range" id="slider_taille" name="slider_value_taille" min="1" max="10"
                                         value="{{ selected_value_interet }}" class="slider"
@@ -140,9 +140,9 @@
                                 </select>
                             </td>
                             <td>
-                                <p class="entry">Entrez le coefficient pour l'intéret :</p>
+                                <p class="entry">Entrez le coefficient pour la couleur :</p>
                                 <div class="slider-container">
-                                    <input type="range" id="slider_coul" name="slider_value_coul" min="1" max="10"
+                                    <input type="range" id="slider_coul" name="slider_value_couleur" min="1" max="10"
                                         value="{{ selected_value_interet }}" class="slider"
                                         oninput="updateValue(this.value)">
                                     <div class="ticks">
@@ -168,9 +168,9 @@
                                 </select>
                             </td>
                             <td>
-                                <p class="entry">Entrez le coefficient pour l'intéret :</p>
+                                <p class="entry">Entrez le coefficient pour la matière :</p>
                                 <div class="slider-container">
-                                    <input type="range" id="slider_mat" name="slider_value_mat" min="1" max="10"
+                                    <input type="range" id="slider_mat" name="slider_value_matiere" min="1" max="10"
                                         value="{{ selected_value_interet }}" class="slider"
                                         oninput="updateValue(this.value)">
                                     <div class="ticks">
@@ -194,11 +194,10 @@
                                 </select>
                             </td>
                             <td>
-                                <p class="entry">Entrez le coefficient pour l'intéret :</p>
+                                <p class="entry">Entrez le coefficient pour le plat :</p>
                                 <div class="slider-container">
                                     <input type="range" id="slider_plat" name="slider_value_plat" min="1" max="10"
-                                        value="{{ selected_value_interet }}" class="slider"
-                                        oninput="updateValue(this.value)">
+                                        value="{{ plat }}" class="slider">
                                     <div class="ticks">
                                         {% for i in range(1, 11) %}
                                         <span>{{ i }}</span>
