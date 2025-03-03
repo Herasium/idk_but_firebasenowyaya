@@ -1,12 +1,11 @@
 {
     "coef": {
-        "interet": 8,
-        "age": 10,
-        "taille": 3,
-        "couleur preferee": 9,
-        "matiere": 1,
-        "plat": 10,
-        "couleur": 3
+        "interet": 9,
+        "age": 8,
+        "taille": 7,
+        "couleur": 3,
+        "matiere": 10,
+        "plat": 3
     },
     "dico": [
         {
