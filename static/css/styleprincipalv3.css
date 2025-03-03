@@ -281,3 +281,26 @@ ul li img,
 ul li span {
     margin-right: 7.5px;
 }
+
+/* CURSEURS */
+
+.slider-container {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+}
+
+.slider {
+    width: 100%;
+}
+
+.ticks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.ticks span {
+    font-size: 14px;
+}

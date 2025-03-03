@@ -23,10 +23,11 @@ def submit_and_verify():
     interet = request.form.get("interet")
     couleur = request.form.get("couleur")
     matiere = request.form.get("matiere")
-
+    plat = request.form.get("plat")
+    selected_value_interet = request.form.get("slider_value", 3)
     
 
-    if not all([prenom, nom, age, taille, interet, couleur, matiere]):
+    if not all([prenom, nom, age, taille, interet, couleur, matiere, plat, selected_value_interet]):
         flash("Tous les champs doivent être remplis !", "error")
         return redirect(url_for("bonjour"))
     else :
@@ -62,7 +63,8 @@ def save_info ():
             "taille" : request.form.get('taille'),
             "interet" : request.form.get('interet'),
             "couleur" : request.form.get('couleur'),
-            "matiere" : request.form.get('matiere')
+            "matiere" : request.form.get('matiere'),
+            "plat" : request.form.get('plat')
         }
     }
     

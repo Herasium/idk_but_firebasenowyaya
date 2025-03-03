@@ -96,7 +96,32 @@
 
             </select>
             <br>
+            <p class="entry">Entrez votre plat préféré :</p>
+            <select class="input-menu" name="plat">
+                <!-- <option value=""></option> -->
+                <option value="Pâtes">Pâtes</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+                <option value="Sushi">Sushi</option>
+                <option value="Brocoli">Brocoli</option>
+            </select>
+            <br>
+            <p class="entry">Entrez le coefficient pour l'intéret :</p>
+            <form method="POST">
+                <div class="slider-container">
+                    <input type="range" id="slider" name="slider_value" min="1" max="10" value="{{ selected_value_interet }}" class="slider" oninput="updateValue(this.value)">
+                    <div class="ticks">
+                        {% for i in range(1, 11) %}
+                            <span>{{ i }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!-- <p>Valeur sélectionnée : <span id="slider_value">{{ selected_value_interet }}</span></p> -->
+               
+            </form>
+            <br>
             <button type="submit" class="bouton">Envoyer</button>
+            
     
 
         </div>

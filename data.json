@@ -1,11 +1,11 @@
 {
     "coef": {
-        "genre": 1,
         "interet": 3,
         "age": 3,
-        "taille": 5,
+        "taille": 6,
         "couleur pr\u00e9f\u00e9r\u00e9e": 9,
-        "matiere": 7
+        "matiere": 7,
+        "plat": 5
     },
     "dico": [
         {
@@ -19,7 +19,9 @@
                     "interet": "manger",
                     "age": "16 ans",
                     "taille": "110/130 cm",
-                    "couleur pr\u00e9f\u00e9r\u00e9e": "violet"
+                    "couleur pr\u00e9f\u00e9r\u00e9e": "violet",
+                    "matiere": "Maths",
+                    "plat": "Pizza"
                 }
             }
         },
@@ -34,7 +36,9 @@
                     "interet": "dormir",
                     "age": "16 ans",
                     "taille": "110/130 cm",
-                    "couleur pr\u00e9f\u00e9r\u00e9e": "rouge"
+                    "couleur pr\u00e9f\u00e9r\u00e9e": "rouge",
+                    "matiere": "Francais",
+                    "plat": "Pates"
                 }
             }
         },
@@ -233,6 +237,38 @@
                     "interet": "manger",
                     "couleur": "Bleu",
                     "matiere": "Sport"
+                }
+            }
+        },
+        {
+            "test": {
+                "presentation": {
+                    "prenom": "test",
+                    "nom": "test"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "180/190 cm",
+                    "interet": "faire du sport",
+                    "couleur": "Orange",
+                    "matiere": "Physique-Chimie",
+                    "plat": "Brocoli"
+                }
+            }
+        },
+        {
+            "test": {
+                "presentation": {
+                    "prenom": "test",
+                    "nom": "test"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "180/190 cm",
+                    "interet": "faire du sport",
+                    "couleur": "Orange",
+                    "matiere": "Physique-Chimie",
+                    "plat": "Brocoli"
                 }
             }
         }
