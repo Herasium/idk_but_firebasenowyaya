@@ -134,11 +134,6 @@ def representation_person_on_plan(person):
         )
         angle = angle + angleinter
 
-<<<<<<< HEAD
     print(positions) 
     return positions
 
-=======
-    
-    return positions
->>>>>>> cf05df3594fdfd0aa35e67234ef9b8d2a1b6b563
