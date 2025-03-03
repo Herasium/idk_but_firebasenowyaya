@@ -311,10 +311,7 @@ ul li span {
     margin-top: auto;
 }
 
-.right {
-}
-.left {
-}
+
 .columns {
     display: flex;
     justify-content: space-between;
