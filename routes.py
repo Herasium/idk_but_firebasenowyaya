@@ -9,8 +9,14 @@ FILE_PATH = 'data.json'
 
 @site.route("/")
 def bonjour():
-    plat = 4
-    return render_template("index.html", plat=plat)
+    plat = 5
+    interet = 5
+    age = 5
+    taille = 5
+    couleur = 5
+    matiere = 5 
+
+    return render_template("index.html", plat=plat, interet=interet, age=age, taille=taille, couleur=couleur, matiere=matiere)
 
 @site.route("/submit", methods=["POST", "GET"])
 def submit_and_verify():
