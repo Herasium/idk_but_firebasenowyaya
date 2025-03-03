@@ -1,11 +1,11 @@
 {
     "coef": {
-        "interet": 9,
-        "age": 5,
-        "taille": 3,
-        "couleur pr\u00c3\u00a9f\u00c3\u00a9r\u00c3\u00a9e": 9,
+        "interet": 6,
+        "age": 6,
+        "taille": 6,
+        "couleur preferee": 9,
         "matiere": 5,
-        "plat": 8,
+        "plat": 6,
         "couleur": 5
     },
     "dico": [
@@ -19,7 +19,7 @@
                     "interet": "faire du sport",
                     "age": "16 ans",
                     "taille": "160/170 cm",
-                    "couleur pr\u00c3\u00a9f\u00c3\u00a9r\u00c3\u00a9e": "violet",
+                    "couleur preferee": "violet",
                     "matiere": "NSI",
                     "plat": "Burger"
                 }
@@ -36,7 +36,7 @@
                     "interet": "dormir",
                     "age": "16 ans",
                     "taille": "160/170 cm",
-                    "couleur pr\u00c3\u00a9f\u00c3\u00a9r\u00c3\u00a9e": "Rouge",
+                    "couleur preferee": "Rouge",
                     "matiere": "NSI",
                     "plat": "Pates"
                 }
@@ -52,7 +52,7 @@
                     "interet": "jouer",
                     "age": "17 ans",
                     "taille": "180/190 cm",
-                    "couleur pr\u00c3\u00a9f\u00c3\u00a9r\u00c3\u00a9e": "Rouge",
+                    "couleur preferee": "Rouge",
                     "matiere": "Histoire",
                     "plat": "Sushi"
                 }
@@ -173,7 +173,7 @@
         {
             "person_11": {
                 "presentation": {
-                    "prenom": "Rapha\u00c3\u00abl",
+                    "prenom": "Raphael",
                     "nom": "Okabe"
                 },
                 "info_perso": {
@@ -189,7 +189,7 @@
         {
             "person_12": {
                 "presentation": {
-                    "prenom": "Rapha\u00c3\u00abl ",
+                    "prenom": "Raphael ",
                     "nom": "Poinsignon"
                 },
                 "info_perso": {
@@ -247,6 +247,38 @@
                     "couleur": "Bleu",
                     "matiere": "Maths",
                     "plat": "Pizza"
+                }
+            }
+        },
+        {
+            "Gunnarsson": {
+                "presentation": {
+                    "prenom": "Emil",
+                    "nom": "Gunnarsson"
+                },
+                "info_perso": {
+                    "age": "14 ans",
+                    "taille": "150/160 cm",
+                    "interet": "manger",
+                    "couleur": "Bleu",
+                    "matiere": "Maths",
+                    "plat": "Pates"
+                }
+            }
+        },
+        {
+            "Christophe": {
+                "presentation": {
+                    "prenom": "Emma",
+                    "nom": "Christophe"
+                },
+                "info_perso": {
+                    "age": "15 ans",
+                    "taille": "160/170 cm",
+                    "interet": "dormir",
+                    "couleur": "Violet",
+                    "matiere": "Histoire",
+                    "plat": "Sushi"
                 }
             }
         }
