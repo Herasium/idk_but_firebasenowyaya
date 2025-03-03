@@ -32,29 +32,28 @@ Flask
 ### Installation
 1. Clonez le repository :   
 ```
-https://github.com/Eudo08/2024_2025__lndb_proximite.git
+https://github.com/Eudo08/lndb_proximite_sans_firebase.git
 ```
 2. Assurez-vous que Python est installé. Vous pouvez le télécharger depuis [python.org](python.org).
 
-3. Installez à partir du terminal Flask et Firebase admin.
+3. Installez à partir du terminal Flask.
 
 
 ### Utilisation
 1. Ouvrez le site en lançant :
 ```
-python interface_quest_actual_version.py
+python route.py
 ```
 2. Vous pouvez ainsi acceder au site à partir du lien se trouvant dans le terminal.
 3. Suivez les instructions, rentrez et envoyez vos données afin d'obtenir le classement.
 
 
 ### Modules et fonctions
-#### interface_quest_actual_version.py :
-``save_info`` : Enregistre les données de l'utilisateur dans la base de données firebase.
+#### route.py :
+``save_info`` : Enregistre les données de l'utilisateur dans la base de données ``data.json``.
 ``submit_and_verify`` : Vérifie que l'utilisateur ait bien rempli tous les champs du site.  
 #### main.py :
-``get_nom``, ``get_prenom``, ``get_info_perso``... : Récupère les informations de la base de données pour les fonctions de comparaison. 
-``compare_proximity`` : Récupère les données de deux utilisateurs afin d'obtenir un chiffre selon leur point cummun.
+``compare_proximity`` : Récupère les données de deux utilisateurs afin d'obtenir un chiffre selon leur point cummun pour .
 
 
 ### Exemple
