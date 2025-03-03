@@ -112,11 +112,5 @@ def representation_person_on_plan(person):
         )
         angle = angle + angleinter
 
-    print(positions)
+    
     return positions
-
-
-# print("Compatibilité brute :", compare_with_different_person("person_2"))
-# print("Distances et personnes :", distance_with_people("person_2"))
-# print("Tri des compatibilités :", sort_compatibility_between_users("person_2"))
-# print("Dictionnaire des distances :", dico_distance("person_2"))

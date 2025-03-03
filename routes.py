@@ -76,7 +76,6 @@ def save_info_in_dico(prenom, nom, age, taille, interet, couleur, matiere, plat)
     
     for person in data_dict["dico"]:
         if person_id in person:
-            print(f"🔄 Mise à jour de {prenom} {nom} déjà existant dans la base de données.")
             person[person_id] = {
                 "presentation": {"prenom": prenom, "nom": nom},
                 "info_perso": {
@@ -88,7 +87,6 @@ def save_info_in_dico(prenom, nom, age, taille, interet, couleur, matiere, plat)
             return
 
     
-    print(f"✅ Ajout de {prenom} {nom} dans la base de données.")
     data_dict["dico"].append({
         person_id: {
             "presentation": {"prenom": prenom, "nom": nom},
@@ -110,7 +108,6 @@ def update_coef(sliders):
     for key, value in sliders.items():
         data_dict["coef"][key] = value
     
-    print(f"📊 Mise à jour des coefficients: {data_dict['coef']}")
     save_data(data_dict)
 
 if __name__ == '__main__':
