@@ -46,7 +46,7 @@
             "person_3": {
                 "presentation": {
                     "prenom": "Tristan",
-                    "nom": "Bonni\u00c3\u00a8re"
+                    "nom": "Bonniere"
                 },
                 "info_perso": {
                     "interet": "jouer",
@@ -230,54 +230,6 @@
                     "interet": "faire du sport",
                     "couleur": "Bleu",
                     "matiere": "Maths",
-                    "plat": "Sushi"
-                }
-            }
-        },
-        {
-            "Christophe": {
-                "presentation": {
-                    "prenom": "Louise ",
-                    "nom": "Christophe"
-                },
-                "info_perso": {
-                    "age": "16 ans",
-                    "taille": "170/180 cm",
-                    "interet": "dormir",
-                    "couleur": "Bleu",
-                    "matiere": "Maths",
-                    "plat": "Pizza"
-                }
-            }
-        },
-        {
-            "Gunnarsson": {
-                "presentation": {
-                    "prenom": "Emil",
-                    "nom": "Gunnarsson"
-                },
-                "info_perso": {
-                    "age": "14 ans",
-                    "taille": "150/160 cm",
-                    "interet": "manger",
-                    "couleur": "Bleu",
-                    "matiere": "Maths",
-                    "plat": "Pates"
-                }
-            }
-        },
-        {
-            "Christophe": {
-                "presentation": {
-                    "prenom": "Emma",
-                    "nom": "Christophe"
-                },
-                "info_perso": {
-                    "age": "15 ans",
-                    "taille": "160/170 cm",
-                    "interet": "dormir",
-                    "couleur": "Violet",
-                    "matiere": "Histoire",
                     "plat": "Sushi"
                 }
             }
