@@ -1,11 +1,21 @@
 {
     "coef": {
+<<<<<<< HEAD
         "interet": 9,
         "age": 8,
         "taille": 7,
         "couleur": 3,
         "matiere": 10,
         "plat": 3
+=======
+        "interet": 5,
+        "age": 5,
+        "taille": 5,
+        "couleur pr\u00c3\u00a9f\u00c3\u00a9r\u00c3\u00a9e": 9,
+        "matiere": 5,
+        "plat": 5,
+        "couleur": 5
+>>>>>>> cf05df3594fdfd0aa35e67234ef9b8d2a1b6b563
     },
     "dico": [
         {

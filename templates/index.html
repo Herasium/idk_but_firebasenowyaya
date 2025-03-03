@@ -49,7 +49,7 @@
                             <td>
                                 <p class="entry">Entrez votre âge :</p>
                                 <select class="input-menu" name="age">
-                                    <!-- <option value=""></option> -->
+                                    <option value=""></option>
                                     <option value="14 ans">14 ans</option>
                                     <option value="15 ans">15 ans</option>
                                     <option value="16 ans">16 ans</option>
@@ -62,8 +62,7 @@
                                 <p class="entry">Entrez le coefficient pour l'âge :</p>
                                 <div class="slider-container">
                                     <input type="range" id="slider_age" name="slider_value_age" min="1" max="10"
-                                        value="{{ age }}" class="slider"
-                                        oninput="updateValue(this.value)">
+                                        value="{{ age }}" class="slider" oninput="updateValue(this.value)">
                                     <div class="ticks">
                                         {% for i in range(1, 11) %}
                                         <span>{{ i }}</span>
@@ -76,7 +75,7 @@
                             <td>
                                 <p class="entry">Entrez votre taille :</p>
                                 <select class="input-menu" name="taille">
-                                    <!-- <option value=""></option> -->
+                                    <option value=""></option>
                                     <option value="150/160 cm">150/160 cm</option>
                                     <option value="160/170 cm">160/170 cm</option>
                                     <option value="170/180 cm">170/180 cm</option>
@@ -88,8 +87,7 @@
                                 <p class="entry">Entrez le coefficient pour la taille :</p>
                                 <div class="slider-container">
                                     <input type="range" id="slider_taille" name="slider_value_taille" min="1" max="10"
-                                        value="{{ taille }}" class="slider"
-                                        oninput="updateValue(this.value)">
+                                        value="{{ taille }}" class="slider" oninput="updateValue(this.value)">
                                     <div class="ticks">
                                         {% for i in range(1, 11) %}
                                         <span>{{ i }}</span>
@@ -102,7 +100,7 @@
                             <td>
                                 <p class="entry">Entrez votre intéret :</p>
                                 <select class="input-menu" name="interet">
-                                    <!-- <option value=""></option> -->
+                                    <option value=""></option>
                                     <option value="manger">manger</option>
                                     <option value="dormir">dormir</option>
                                     <option value="jouer">jouer</option>
@@ -114,8 +112,7 @@
                                 <p class="entry">Entrez le coefficient pour l'intéret :</p>
                                 <div class="slider-container">
                                     <input type="range" id="slider_interet" name="slider_value_interet" min="1" max="10"
-                                        value="{{ interet }}" class="slider"
-                                        oninput="updateValue(this.value)">
+                                        value="{{ interet }}" class="slider" oninput="updateValue(this.value)">
                                     <div class="ticks">
                                         {% for i in range(1, 11) %}
                                         <span>{{ i }}</span>
@@ -128,7 +125,7 @@
                             <td>
                                 <p class="entry">Entrez votre couleur préférée :</p>
                                 <select class="input-menu" name="couleur">
-                                    <!-- <option value=""></option> -->
+                                    <option value=""></option>
                                     <option value="Bleu">Bleu</option>
                                     <option value="Rouge">Rouge</option>
                                     <option value="Jaune">Jaune</option>
@@ -143,8 +140,7 @@
                                 <p class="entry">Entrez le coefficient pour la couleur :</p>
                                 <div class="slider-container">
                                     <input type="range" id="slider_coul" name="slider_value_couleur" min="1" max="10"
-                                        value="{{ couleur }}" class="slider"
-                                        oninput="updateValue(this.value)">
+                                        value="{{ couleur }}" class="slider" oninput="updateValue(this.value)">
                                     <div class="ticks">
                                         {% for i in range(1, 11) %}
                                         <span>{{ i }}</span>
@@ -158,7 +154,7 @@
                             <td>
                                 <p class="entry">Entrez votre matière préférée :</p>
                                 <select class="input-menu" name="matiere">
-                                    <!-- <option value=""></option> -->
+                                    <option value=""></option>
                                     <option value="Maths">Maths</option>
                                     <option value="Français">Français</option>
                                     <option value="NSI">NSI</option>
@@ -184,8 +180,8 @@
                             <td>
                                 <p class="entry">Entrez votre plat préféré :</p>
                                 <select class="input-menu" name="plat">
-                                    <!-- <option value=""></option> -->
-                                    <option value="Pâtes">Pâtes</option>
+                                    <option value=""></option>
+                                    <option value="Pâtes">Pates</option>
                                     <option value="Pizza">Pizza</option>
                                     <option value="Burger">Burger</option>
                                     <option value="Sushi">Sushi</option>
@@ -209,7 +205,7 @@
 
                 </div>
 
-                <!-- <p>Valeur sélectionnée : <span id="slider_value">{{ selected_value_interet }}</span></p> -->
+
 
             </div>
             <button type="submit" class="bouton">Envoyer</button>
