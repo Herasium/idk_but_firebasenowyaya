@@ -31,6 +31,7 @@ def submit_and_verify():
         flash("Tous les champs doivent être remplis !", "error")
         return redirect(url_for("bonjour"))
     else :
+        update_coef()
         save_info_in_dico()
         current_person = nom.strip().lower()
         sort_number, sort_people = sort_compatibility_between_users(current_person)
@@ -65,6 +66,9 @@ def save_info ():
             "couleur" : request.form.get('couleur'),
             "matiere" : request.form.get('matiere'),
             "plat" : request.form.get('plat')
+        },
+        "coef": {
+            "interet": int(request.form.get("slider_value", 3))  
         }
     }
     
@@ -81,8 +85,13 @@ def save_info_in_dico():
         })
     save_data(data_dict)
 
+def update_coef():
+    data_dict = load_data()  
+    if "coef" not in data_dict:
+        data_dict["coef"] = {}
 
-
+    data_dict["coef"]["interet"] = int(request.form.get("slider_value", 3)) 
+    save_data(data_dict) 
 
 if __name__ == '__main__':
     site.run(debug=True)
