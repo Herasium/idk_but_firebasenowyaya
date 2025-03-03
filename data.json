@@ -1,15 +1,16 @@
 {
     "coef": {
-        "interet": 10,
-        "age": 6,
-        "taille": 6,
+        "interet": 8,
+        "age": 10,
+        "taille": 3,
         "couleur preferee": 9,
-        "matiere": 10,
-        "plat": 3
+        "matiere": 1,
+        "plat": 10,
+        "couleur": 3
     },
     "dico": [
         {
-            "person_1": {
+            "de Khovrine": {
                 "presentation": {
                     "prenom": "Eudocie",
                     "nom": "de Khovrine"
@@ -25,7 +26,7 @@
             }
         },
         {
-            "person_2": {
+            "Fraboulet": {
                 "presentation": {
                     "prenom": "Marine",
                     "nom": "Fraboulet"
@@ -42,7 +43,7 @@
             }
         },
         {
-            "person_3": {
+            "Bonniere": {
                 "presentation": {
                     "prenom": "Tristan",
                     "nom": "Bonniere"
@@ -58,7 +59,7 @@
             }
         },
         {
-            "person_4": {
+            "Baranovskii": {
                 "presentation": {
                     "prenom": "Roman",
                     "nom": "Baranovskii"
@@ -74,7 +75,7 @@
             }
         },
         {
-            "person_5": {
+            "Bidault": {
                 "presentation": {
                     "prenom": "Julian",
                     "nom": "Bidault"
@@ -90,7 +91,7 @@
             }
         },
         {
-            "person_6": {
+            "Smadja": {
                 "presentation": {
                     "prenom": "Nolan",
                     "nom": "Smadja"
@@ -106,7 +107,7 @@
             }
         },
         {
-            "person_7": {
+            "Waksman": {
                 "presentation": {
                     "prenom": "Tom",
                     "nom": "Waksman"
@@ -122,7 +123,7 @@
             }
         },
         {
-            "person_8": {
+            "Gunnarsson": {
                 "presentation": {
                     "prenom": "Emil",
                     "nom": "Gunnarsson"
@@ -138,7 +139,7 @@
             }
         },
         {
-            "person_9": {
+            "Cornille": {
                 "presentation": {
                     "prenom": "Victor",
                     "nom": "Cornille"
@@ -154,7 +155,7 @@
             }
         },
         {
-            "person_10": {
+            "Bourgain": {
                 "presentation": {
                     "prenom": "Maxime",
                     "nom": "Bourgain"
@@ -170,7 +171,7 @@
             }
         },
         {
-            "person_11": {
+            "Okabe": {
                 "presentation": {
                     "prenom": "Raphael",
                     "nom": "Okabe"
@@ -186,7 +187,7 @@
             }
         },
         {
-            "person_12": {
+            "Poinsignon": {
                 "presentation": {
                     "prenom": "Raphael ",
                     "nom": "Poinsignon"
@@ -202,7 +203,7 @@
             }
         },
         {
-            "person_13": {
+            "dz": {
                 "presentation": {
                     "prenom": "Matheo",
                     "nom": "dz"
@@ -218,7 +219,7 @@
             }
         },
         {
-            "person_14": {
+            "Bock": {
                 "presentation": {
                     "prenom": "Jules",
                     "nom": "Bock"
@@ -229,6 +230,22 @@
                     "interet": "faire du sport",
                     "couleur": "Bleu",
                     "matiere": "Maths",
+                    "plat": "Sushi"
+                }
+            }
+        },
+        {
+            "Belhaddad": {
+                "presentation": {
+                    "prenom": "Wael",
+                    "nom": "Belhaddad"
+                },
+                "info_perso": {
+                    "age": "16 ans",
+                    "taille": "170/180 cm",
+                    "interet": "manger",
+                    "couleur": "Jaune",
+                    "matiere": "Physique-Chimie",
                     "plat": "Sushi"
                 }
             }
