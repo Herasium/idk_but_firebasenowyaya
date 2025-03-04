@@ -52,7 +52,7 @@ python route.py
 #### route.py :
 ``save_info`` : Enregistre les données de l'utilisateur dans la base de données ``data.json``.
 ``submit_and_verify`` : Vérifie que l'utilisateur ait bien rempli tous les champs du site.  
-#### main.py :
+#### compare_proximity.py :
 ``compare_proximity`` : Récupère les données de deux utilisateurs afin d'obtenir un chiffre selon leur point cummun pour .
 
 
