@@ -15,7 +15,7 @@ Ce projet est un outil permettant de comparer les éléves entre eux selon leurs
 **submit.html** : Ficher portant sur la structure de la seconde page du site. 
 **data.json** : Fichier contennant les informations de l'utilisateur.  
 **routes.py** : Fichier enregistrant les donées rentrée par l'utilisateur.  
-**compare_proximity.py** : Fichier contennant toutes les fonctions qui permettent de comparer par des calculs les données d'un utilisateur.
+**compare.py** : Fichier contennant toutes les fonctions qui permettent de comparer par des calculs les données d'un utilisateur.
 
 
 ### Fonctionnalités
@@ -52,7 +52,7 @@ python route.py
 #### route.py :
 ``save_info`` : Enregistre les données de l'utilisateur dans la base de données ``data.json``.
 ``submit_and_verify`` : Vérifie que l'utilisateur ait bien rempli tous les champs du site.  
-#### compare_proximity.py :
+#### compare.py :
 ``compare_proximity`` : Récupère les données de deux utilisateurs afin d'obtenir un chiffre selon leur point cummun pour .
 
 
