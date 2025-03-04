@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from tools_json import load_data, save_data
-from compare_proximity import sort_compatibility_between_users, get_dico, representation_person_on_plan
+from compare import sort_compatibility_between_users, get_dico, representation_person_on_plan
 
 # Initialisation de l'application Flask
 site = Flask(__name__)
