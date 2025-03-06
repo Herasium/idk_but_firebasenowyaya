@@ -116,6 +116,8 @@ def dico_distance(person):
 def representation_person_on_plan(person):
     positions = []
     dico_distance_personne = dico_distance(person)
+    if len(dico_distance_personne) == 0:
+        return []
     angleinter = 360 / len(dico_distance_personne)
     angle = 0
     dico = get_dico()

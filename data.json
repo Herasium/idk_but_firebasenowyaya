@@ -1,11 +1,11 @@
 {
     "coef": {
-        "interet": 9,
-        "age": 8,
-        "taille": 7,
-        "couleur": 3,
-        "matiere": 10,
-        "plat": 3
+        "interet": 5,
+        "age": 5,
+        "taille": 5,
+        "couleur": 5,
+        "matiere": 5,
+        "plat": 5
     },
     "dico": [
         {
@@ -245,6 +245,22 @@
                     "interet": "manger",
                     "couleur": "Jaune",
                     "matiere": "Physique-Chimie",
+                    "plat": "Sushi"
+                }
+            }
+        },
+        {
+            "delabruge": {
+                "presentation": {
+                    "prenom": "Jean",
+                    "nom": "DeLaBruge"
+                },
+                "info_perso": {
+                    "age": "18 ans",
+                    "taille": "180/190 cm",
+                    "interet": "programmer",
+                    "couleur": "Rouge",
+                    "matiere": "NSI",
                     "plat": "Sushi"
                 }
             }
